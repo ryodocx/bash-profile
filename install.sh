@@ -27,6 +27,7 @@ go get github.com/tebeka/go2xunit
 
 # docker-compose
 curl -L $DOCKER_COMPOSE_URL -o tool/bin/docker-compose
+chmod +x tool/bin/docker-compose
 
 # dc/os cli
 curl $DCOS_URL -o tool/bin/dcos

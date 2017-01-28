@@ -18,6 +18,7 @@ tar -C tool/go -xzf go --strip-components 1
 rm go
 echo "export PATH=`pwd`/tool/go/bin:\$PATH" >> setpath.sh
 echo "export PATH=`pwd`/tool/gopath/bin:\$PATH" >> setpath.sh
+echo "export GOROOT=`pwd`/tool/go" >> setpath.sh
 echo "export GOPATH=`pwd`/tool/gopath" >> setpath.sh
 
 # Go tools

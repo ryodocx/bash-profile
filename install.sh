@@ -4,6 +4,7 @@
 GO_URL=https://storage.googleapis.com/golang/go1.7.5.linux-amd64.tar.gz
 DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/1.10.0/docker-compose-Linux-x86_64
 DCOS_URL=https://downloads.dcos.io/binaries/cli/linux/x86-64/dcos-1.8/dcos
+PROTOC_URL=https://github.com/google/protobuf/releases/download/v3.0.0/protoc-3.0.0-linux-x86_64.zip
 
 # init
 WKDIR=`pwd`
@@ -32,3 +33,10 @@ chmod +x tool/bin/docker-compose
 
 # dc/os cli
 curl $DCOS_URL -o tool/bin/dcos
+
+# protoc
+mkdir -p tool/protoc
+curl -L $PROTOC_URL -o protoc
+tar -C tool/protoc -xzf protoc --strip-components 1
+rm protoc
+echo "export PATH=`pwd`/tool/protoc/bin:\$PATH" >> setpath.sh

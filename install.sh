@@ -26,6 +26,8 @@ echo "export GOPATH=`pwd`/tool/gopath" >> setpath.sh
 source setpath.sh
 go get github.com/constabulary/gb/...
 go get github.com/tebeka/go2xunit
+go get github.com/golang/protobuf/proto
+go get github.com/golang/protobuf/protoc-gen-go
 
 # docker-compose
 curl -L $DOCKER_COMPOSE_URL -o tool/bin/docker-compose

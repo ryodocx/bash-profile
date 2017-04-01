@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 
-URL=https://storage.googleapis.com/golang/go1.7.5.linux-amd64.tar.gz
+URL=https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz
 INSTALL_DIR=$HOME/.tool/go
 GOPATH=$HOME/.go
 

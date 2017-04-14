@@ -18,7 +18,5 @@ PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin
 
 EOS
 
-go version
-
 echo  "please run the following command or restart shell"
 echo  "source \$HOME/.profile"

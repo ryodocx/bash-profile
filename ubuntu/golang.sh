@@ -1,7 +1,7 @@
 #!/bin/bash -xe
 
 URL="https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz"
-INSTALL_DIR="DIR=/usr/local/go"
+INSTALL_DIR="/usr/local/go"
 GOPATH="$HOME/.go"
 
 mkdir -p $INSTALL_DIR

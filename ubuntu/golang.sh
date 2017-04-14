@@ -4,9 +4,9 @@ URL="https://storage.googleapis.com/golang/go1.8.linux-amd64.tar.gz"
 INSTALL_DIR="/usr/local/go"
 GOPATH="$HOME/.go"
 
-mkdir -p $INSTALL_DIR
+sudo mkdir -p $INSTALL_DIR
 wget $URL -O tmp
-tar xfvz tmp -C $INSTALL_DIR --strip-components 1
+sudo tar xfvz tmp -C $INSTALL_DIR --strip-components 1
 rm tmp
 
 cat << EOS >> $HOME/.profile
